@@ -1,3 +1,3 @@
 module.exports = {
-    publicPath : '/home-base/'
+    publicPath : '/home-base'
 }
