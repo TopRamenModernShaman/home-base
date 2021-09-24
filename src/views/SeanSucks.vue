@@ -42,7 +42,7 @@ export default {
 			console.log("HERE WE GO")
 			fetch('https://api.magicthegathering.io/v1/cards?name=' + name)
 				.then(function (response){
-					let cards = response.data.cards
+					let cards = response.cards
 					console.log(cards.length)
 					
 					let newcards = cards.sort( function ( a,b ) {
