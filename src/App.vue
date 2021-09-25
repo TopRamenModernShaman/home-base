@@ -1,8 +1,8 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link> |
-    <router-link to="/SeanSucks"> SeanSucks </router-link>
+  <div id="nav" :style="{ backgroundImage: 'url(' + require('@/assets/paintBG.png') + ')' }">
+    <router-link to="/"> Home </router-link> |
+    <router-link to="/SeanSucks"> SeanSucks </router-link> |
+    <router-link to="/mtg"> MTG </router-link>
   </div>
   <router-view/>
 </template>
@@ -27,5 +27,19 @@
 
 #nav a.router-link-exact-active {
   color: #42b983;
+}
+
+body, html {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  min-height: 100vh;
+}
+body {
+  background-color: gray;
+}
+
+.bfont{
+  color: rgb(30, 123, 185);
 }
 </style>
